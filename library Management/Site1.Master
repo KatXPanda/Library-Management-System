@@ -15,13 +15,9 @@
 
     <%-- custom css --%>
     <link href="css/CustomStyleSheet.css" rel="stylesheet" />
-    
-    <%-- jquery --%>
-    <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-    <%-- popper js --%>
-    <script src="Bootstrap/js/popper.min.js"></script>
-    <%-- bootstrap js --%>
-    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <%--javascript--%>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -61,10 +57,10 @@
                         </li>
 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" PostBackUrl="~/userlogin.aspx">User Login</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" PostBackUrl="~/usersignup.aspx">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
@@ -90,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server"  PostBackUrl="~/adminlogin.aspx">Admin Login</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
                             &nbsp;
